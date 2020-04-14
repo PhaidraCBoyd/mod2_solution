@@ -1,8 +1,29 @@
 /* CSS Document */
 body {
-margin: 2px;
-padding: 2px;
+margin: 0;
+padding: 0;
 background-color: #55E527;
 color: #E0FFD7;
-font-family: 'Helvetica', Arial, san serif
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
+
+.box {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid black;
+}
+.section {
+  color: black;
+  background-color: f1f1f1;
+  
+}
+  
+.sectiontitle {
+  color: black;
+  background-color: f1f1f1;
+  text-align: center;
+}
+ h1 {
+   font-size: 
+  
