@@ -1,29 +1,124 @@
 /* CSS Document */
-body {
-margin: 0;
-padding: 0;
-background-color: #55E527;
-color: #E0FFD7;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.box {
-  background-color: white;
+body {
+ background-color: #f1f1f1;
+}
+
+style {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
+
+#container {
+  background-color: purple;
+  position: absolute;
   padding: 5px;
+}
+
+#box1 {
+  background-color: #E6FFD7;
   border: 1px solid black;
+  width: 33%;
+  margin: 5px;
 }
-.section {
-  color: black;
-  background-color: f1f1f1;
-  
+
+#box2 {
+  background-color: #BEBDFF;
+  border: 1px solid black;
+  width: 33%;
+ margin: 5px;
 }
-  
-.sectiontitle {
+
+ #box3 {
+  background-color: #FFD4BD;
+  border: 1px solid black;
+  width: 33%;
+ margin: 5px;
+}
+
+#content {
+  background-color: #E0FFD7;
   color: black;
-  background-color: f1f1f1;
+ padding: 25px;
+  margin-right: : 10px;
+  margin-left: : 10px;
+  text-align: justify;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 175%;
+  text-align: center; 
+  font-weight: bold;
+  color: green;
+}
+
+#title {
+ background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
   text-align: center;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 75px;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+ }
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+ #box1 {
+    width: 32%;
+    float: left;}
+
+    #box2 {
+    width: 32%;
+    float: left;}
+
+    #box3 {
+    width: 32%;
+    float: left;
+  }
 }
- h1 {
-   font-size: 
-  
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #box1 {
+    width: 48%;
+    float: right;
+
+  }
+  #box2 {
+   width: 48%;
+   clear: left;
+
+  }
+   #box3 {
+   width: 99%
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  #box1 {
+    width: 96%;
+  }
+  #box2 {
+    width: 96%;
+  }
+   #box3 {
+   width: 96%;
+  body {
+    background-color: blue;
+  }
+}
+
